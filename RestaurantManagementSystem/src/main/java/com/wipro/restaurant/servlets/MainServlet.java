@@ -18,7 +18,6 @@ import com.wipro.restaurant.service.Administrator;
 @WebServlet("/MainServlet")
 public class MainServlet extends HttpServlet {
 
-
     public String addRecord(HttpServletRequest request) {
 
         RestaurantBean bean = new RestaurantBean();
@@ -82,7 +81,6 @@ public class MainServlet extends HttpServlet {
 
             String result = addRecord(request);
 
-            // CORRECTED CONDITION
             if (result.equals("FAIL") ||
                 result.equals("INVALID INPUT") ||
                 result.equals("ALREADY EXISTS") ||
